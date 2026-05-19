@@ -1,3 +1,23 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
+case "${1:-}" in
+  cd)
+    printf '%s\n' "$HOME"
+    exit 0
+    ;;
+  root)
+    printf '%s\n' "$HOME"
+    exit 0
+    ;;
+  git-dir)
+    printf '%s\n' "$HOME/.dotfiles.git"
+    exit 0
+    ;;
+  lazygit|lg)
+    shift
+    exec lazygit --git-dir="$HOME/.dotfiles.git" --work-tree="$HOME" "$@"
+    ;;
+esac
+
 exec git -C "$HOME" --git-dir="$HOME/.dotfiles.git" --work-tree="$HOME" "$@"
