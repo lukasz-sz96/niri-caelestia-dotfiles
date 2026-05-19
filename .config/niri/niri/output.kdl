@@ -1,0 +1,10 @@
+// --- Output Configuration ---
+// Keep this empty by default so the dotfiles do not force a laptop panel name,
+// resolution, or refresh rate that may not exist on the target machine.
+//
+// Example:
+//
+// output "eDP-1" {
+//     mode "1920x1080@60.008"
+//     position x=0 y=0
+// }
