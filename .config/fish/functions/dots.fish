@@ -19,5 +19,5 @@ function dots --description "Manage bare dotfiles repo"
         end
     end
 
-    command git -C "$dotfiles_work_tree" --git-dir="$dotfiles_git" --work-tree="$dotfiles_work_tree" $argv
+    command git --git-dir="$dotfiles_git" --work-tree="$dotfiles_work_tree" $argv
 end

@@ -20,4 +20,4 @@ case "${1:-}" in
     ;;
 esac
 
-exec git -C "$HOME" --git-dir="$HOME/.dotfiles.git" --work-tree="$HOME" "$@"
+exec git --git-dir="$HOME/.dotfiles.git" --work-tree="$HOME" "$@"
