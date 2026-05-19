@@ -1,0 +1,14 @@
+# Local editor and OS noise
+*~
+*.swp
+.DS_Store
+
+# Matugen and shell generated outputs. These are created on install or by the
+# wallpaper/color pipeline and should stay writable outside Git.
+.config/niri/colors.kdl
+.config/gtk-3.0/gtk.css
+.config/gtk-4.0/gtk.css
+.config/mpv/script-opts/niri_caelestia.conf
+.config/btop/themes/niri_caelestia.theme
+.config/Kvantum/MaterialAdw/
+.local/state/quickshell/user/generated/
