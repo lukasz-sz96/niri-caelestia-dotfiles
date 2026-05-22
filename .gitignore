@@ -8,6 +8,7 @@
 .config/niri/colors.kdl
 .config/gtk-3.0/gtk.css
 .config/gtk-4.0/gtk.css
+.config/kdeglobals
 .config/mpv/script-opts/niri_caelestia.conf
 .config/btop/themes/niri_caelestia.theme
 .config/Kvantum/MaterialAdw/
