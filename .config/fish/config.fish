@@ -14,6 +14,14 @@ if status is-interactive # Commands to run in interactive sessions can go here
     # No greeting
     set fish_greeting
 
+    # Keep terminal flow control from trapping output on Ctrl-S.
+    command stty -ixon 2>/dev/null
+
+    function fixterm --description "Reset a stuck terminal without restarting it"
+        command reset
+        command stty sane -ixon 2>/dev/null
+    end
+
     # Use starship
     starship init fish | source
     if test -f ~/.local/state/quickshell/user/generated/terminal/sequences.txt

@@ -9,6 +9,8 @@
 .config/gtk-3.0/gtk.css
 .config/gtk-4.0/gtk.css
 .config/kdeglobals
+.config/fish/fish_variables
+.config/fish/conf.d/caelestia.fish
 .config/mpv/script-opts/niri_caelestia.conf
 .config/btop/themes/niri_caelestia.theme
 .config/Kvantum/MaterialAdw/
